@@ -8,7 +8,8 @@
     "start": "node server.js",
     "client-install": "cd front-end  && npm install",
     "client-build": "cd front-end && npm run build",
-    "heroku-postbuild": "npm run client-install && npm run client-build"
+    "heroku-postbuild": "npm run client-install && npm run client-build",
+    "render-build": "npm run client-install && npm run client-build"
   },
   "author": "pranav",
   "license": "ISC",
