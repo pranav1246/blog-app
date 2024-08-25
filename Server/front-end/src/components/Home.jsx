@@ -19,7 +19,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch('');
+        const response = await fetch('/posts');
         const data = await response.json();
         setBlogs(data);
       } catch (error) {
@@ -67,7 +67,7 @@ const HomePage = () => {
             <Typography variant="body1" sx={{ marginTop: 2 }}>
               {selectedBlog.content}
             </Typography>
-            {account.username && (  // Show buttons only if the user is logged in (username is set)
+            {account.username && (  
               <Box sx={{ marginTop: 2 }}>
                 <Button
                   variant="contained"
