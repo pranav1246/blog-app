@@ -74,7 +74,7 @@ const CreatePost = () => {
     e.preventDefault();
 
     if (!validate()) {
-      return; // Stop form submission if validation fails
+      return; 
     }
 
     const formData = new FormData();
@@ -84,11 +84,11 @@ const CreatePost = () => {
     formData.append('image', post.image);
 
     try {
-      const response = await axios.post('', formData, {
+      const response = await axios.post('/create', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       console.log('Post created:', response.data);
-      navigate('/'); // Redirect to home or another page after successful creation
+      navigate('/');
     } catch (error) {
       console.error('Error creating post:', error);
     }
