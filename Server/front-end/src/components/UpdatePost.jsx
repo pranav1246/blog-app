@@ -9,7 +9,7 @@ import {
 import { useParams, useNavigate } from 'react-router-dom';
 
 const UpdatePost = () => {
-  const { id } = useParams();  // Get the blog ID from the route params
+  const { id } = useParams();  
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [imageUrl, setImageUrl] = useState('');
