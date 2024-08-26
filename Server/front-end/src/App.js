@@ -13,11 +13,12 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-    <main>
-    <DataProvider >
-    <header>
+     <header>
     <Header />
     </header>
+    <main>
+    <DataProvider >
+   
     <div className="content">
     <Routes>
     <Route path='/auth' element={<AuthForm />} />
@@ -27,10 +28,11 @@ function App() {
      </Routes>
       </div>
     </DataProvider>
-    <footer>
+  
+     </main>
+     <footer>
       <Footer />
     </footer>
-     </main>
      </BrowserRouter>
   );
 }
