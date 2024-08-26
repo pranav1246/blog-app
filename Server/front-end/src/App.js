@@ -7,6 +7,7 @@ import DataProvider from './context/DataProvider';
 import HomePage from './components/Home';
 import CreatePost from './components/CreatePost';
 import UpdatePost from './components/UpdatePost';
+import Footer from './components/Footer';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
      </Routes>
       </div>
     </DataProvider>
+    <footer>
+      <Footer />
+    </footer>
      </main>
      </BrowserRouter>
   );
