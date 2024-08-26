@@ -6,8 +6,8 @@ const Footer = () => {
     <Box
       sx={{
         width: '100%',
-        backgroundColor: '#000',  // Set the background color to black
-        color: '#fff',  // Set the text color to white
+        backgroundColor: '#000', 
+        color: '#fff',  
         padding: '20px 0',
         marginTop: 'auto',
         boxShadow: '0px -2px 10px rgba(0, 0, 0, 0.1)',
